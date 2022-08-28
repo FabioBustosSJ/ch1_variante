@@ -1,0 +1,234 @@
+body {
+  padding: 4.5rem;
+  margin: 0;
+  background: #edc0bf;
+  background-image: url("img/fondo02.jfif");font-family: 'Inter', sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cabecera{
+	height: 4rem;
+	background: rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  margin:1rem;
+  box-shadow: 2px 2px 5px 1px dimgrey;
+  text-align: center;
+}
+
+main{
+	display: flex;
+	margin-left: 0;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+.logos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logos .gira1{
+  position: absolute;
+  max-width: 100%;
+  width: 10%;
+  top: 32%;
+  left: 7%;
+  animation: rotation 2s 1 linear;
+}
+.logos .gira2{
+	position: absolute;
+	max-width: 100%;
+	width: 10%;
+  top: 32%;
+  left: 7%; 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.card {
+	position: relative;
+	top: 5rem;
+  width: 35%;
+  height: auto;
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  margin:1rem;
+  box-shadow: 2px 2px 5px 1px dimgrey;
+}
+
+.cabecera .card-title{
+	padding-top: 0.5rem;
+	color: #6F5853;
+	text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+                2px -2px 0 rgba(255, 255, 255, 0.9);
+	/*text-shadow: 0.1em 0.1em 0.1em lightgray;*/	
+}
+
+.textoEntrada, .textoSalida{
+	background:transparent;	
+	width: 100%;
+	border: none;
+	font-size: 1.2em;
+	color: white;
+	resize: none;
+}
+
+img{
+	color: transparent;
+}
+
+.botonesLeft, .botonesRight{
+	text-align: center;
+	position: relative;
+	top:1rem;
+}
+
+.botonesRight{
+	margin-top: 30px;
+}
+
+button{
+	width: 30%;
+  height: 2rem;
+  background-color: slategrey;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1rem;
+  border: solid 2px darkgray;
+  cursor:pointer;
+}
+
+button:active{
+	border-color: white;
+	color: blue;	
+}
+
+button:hover{
+	background: thistle;
+}
+
+.radio{
+	width: 100%;
+  height: 27px;
+  display: inline-flex;
+  margin-right: 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: solid 2px darkgray;
+}
+
+label{
+	margin: 0 5px;
+	color: white;
+}
+
+input{
+	margin-right: 15px;
+	cursor:pointer;
+}
+
+footer{
+	position: relative;
+	top: 4rem;
+	height: 130px;
+	background: rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  margin:1rem;
+  box-shadow: 2px 2px 5px 1px dimgrey;
+  text-align: center;
+}
+
+.redes img{
+	max-width: 100%;
+	width: 40px;
+	display: inline-flex;
+	padding: 0 20px 15px;
+	color: white;
+}
+
+footer p{
+	padding-top: 20px;
+	text-shadow: 2px 2px lightgray;
+	font-size: 22px;
+}
+
+.redes a{
+	text-decoration: none;	
+}
+
+			/*  MEDIA QUERY  */
+
+
+@media screen and (max-width:840px){
+
+	body{
+		background-image: url("img/fondo_mobil03.jpg");font-family: 'Inter', sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	}
+
+	main{
+		display: block;
+		margin-left: 0;
+	}
+
+	.cabecera .card-title{
+		padding-top: 1rem;
+		height: 4.5rem;
+		font-size:31px;
+		margin: 0;
+	}
+
+	.logos .gira1, .logos .gira2{
+		width: 20%;
+		left: 38%;
+    top: 30%;
+	}
+
+	.card{
+		width:auto;
+		display: block;
+	}
+
+	.textoEntrada, .textoSalida{
+		background: transparent;
+    width: 100%;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+	}
+
+	footer{
+		height:130px;		
+	}
+
+	footer .redes{
+		padding:0 20px;
+	}
+	footer .redes img{
+		/*position: relative;*/
+		padding: 0 15px;
+	}
+
+}

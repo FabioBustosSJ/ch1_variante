@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Encriptador</title>
+  </head>
+  <header>
+  	<div class="cabecera">
+  		<h1 class="card-title">Encrypt - Decrypt</h1>
+  	</div>
+  	
+  </header>
+  <body>
+    <main>
+
+    	<div class="logos">
+    	<img src="img/cyberseg_exterior.png" class="gira1">
+    	<img src="img/cyberseg_interior_.png" class="gira2">
+    </div>
+
+    	<section class="card">
+		    
+		    <textarea class="textoEntrada" cols="40" rows="15" placeholder="Ingresar texto" oninput="espejar()" style="text-transform:lowercase" onkeypress="return validar(event)"></textarea>
+
+		    <div class="botonesLeft">
+		    	<div class="radio">
+		  			<label for="radioEncriptar">Encriptar</label>
+		  			<input type="radio" name="encripta" value="Encriptar" id="radioEncriptar" checked="">
+		  			<label for="radioDesencriptar">Desencriptar</label>
+		  			<input type="radio" name="encripta" value="Desencriptar" id="radioDesencriptar">
+		  		</div>
+	  			<button class="limpiar" onclick="btnLimpiar('textoEntrada')">Limpiar</button>    			
+	  		</div>
+  		</section>
+
+			<section class="card">
+				<textarea class="textoSalida" cols="40" rows="15"></textarea>
+				<div class="botonesRight">
+					<button class="copiar" onclick="btnCopiar()">Copiar</button>
+				</div>
+			</section>
+    </main>
+    <footer>
+    	<p class="copyright">&copy Copyright Encriptador</p>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/fabian-bustos-sanjuan/" target="_blank" rel="noopener noreferrer">
+          <img src="img/linkedin_icon.svg" class="lnk" alt="linkedin">
+        </a>
+        <a href="https://github.com/FabioBustosSJ/" target="_blank"
+        rel="noopener noreferrer">
+          <img src="img/github_icon.svg" class="git" alt="github">
+        </a>
+      </div>
+      <span class="fas fa-bars"></span>
+<i class="fas fa-thumbs-up"></i>
+<div class="fa fa-bars fa-4x fa-border"></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
