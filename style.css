@@ -193,22 +193,27 @@ footer p{
 		margin-left: 0;
 	}
 
-	.cabecera .card-title{
+	.cabecera {
+
+		height: 5.5rem;
+	}
+
+	.cabecera .card-title{		
 		padding-top: 1rem;
-		height: 4.5rem;
-		font-size:31px;
+		font-size:26px;
 		margin: 0;
 	}
 
 	.logos .gira1, .logos .gira2{
 		width: 20%;
 		left: 38%;
-    top: 30%;
+    top: 35%;
 	}
 
 	.card{
 		width:auto;
 		display: block;
+		padding: 20px 5px;
 	}
 
 	.textoEntrada, .textoSalida{
@@ -219,12 +224,38 @@ footer p{
     color: white;
 	}
 
+	.botonesLeft{
+		width: 100%;
+		text-align: justify-all;
+	}
+	.botonesLeft .limpiar{
+		width: 50%;
+	}
+
+	.botonesRight .copiar{
+		width: 50%;
+	}
+
+	.radio{
+		width:90%;
+		height: 40%;
+		display: inline-flex;
+		align-content: space-around;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
 	footer{
 		height:130px;		
 	}
 
+	footer .copyright{
+		margin: 10px 0;
+	}
+
 	footer .redes{
 		padding:0 20px;
+		display: inline-flex;
 	}
 	footer .redes img{
 		/*position: relative;*/
